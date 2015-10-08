@@ -1,0 +1,26 @@
+@font-face{
+	font-family: "roboto"
+	src:"bower_components/font-roboto";
+}
+
+body{
+	font-family: "roboto";
+	padding: 0;
+	margin: 0;
+}
+
+paper-tab{
+	padding-left: 5vw;
+	padding-right: 5vw;
+}
+
+paper-toolbar{
+	background-color: #D32F2F;
+	color: #D32F2F;
+	--paper-toolbar-background: #D32F2F;
+	--paper-toolbar-color:#D32F2F;
+}
+
+#toolbarTabs{
+	padding-left: 50vw;
+}

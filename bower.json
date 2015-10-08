@@ -20,6 +20,9 @@
     "polymer": "Polymer/polymer#^1.1.0",
     "iron-a11y-keys": "PolymerElements/iron-a11y-keys#^1.0.0",
     "iron-ajax": "PolymerElements/iron-ajax#^1.0.0",
-    "paper-button": "PolymerElements/paper-button#^1.0.0"
+    "paper-button": "PolymerElements/paper-button#^1.0.0",
+    "paper-elements": "polymerelements/paper-elements#~1.0.5",
+    "google-map": "GoogleWebComponents/google-map#~1.1.3",
+    "iron-elements": "polymerelements/iron-elements#~1.0.4"
   }
 }

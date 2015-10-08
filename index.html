@@ -2,19 +2,41 @@
 <html>
 	<head>
     <!-- 1. Load webcomponents-lite.min.js for polyfill support. -->
-    <script src="bower_components/webcomponentsjs/webcomponents-lite.js">
-    </script>
+    <style is="custom-style">
+  paper-toolbar {
+    --paper-toolbar-background: #D32F2F; /* changes the background to blue*/
+    }; /* Notice the semicolon here */
+  }
+</style>
+    <script src="bower_components/webcomponentsjs/webcomponents-lite.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="elements/todo-app.html" rel="import">
+    <link href="../bower_components/paper-toolbar/paper-toolbar.html" rel="import">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="../bower_components/paper-tabs/paper-tabs.html">
+
     <link rel="import" href="../bower-components/core-component-page/core-component-page.html">
+    <link rel="import" href="../bower_components/paper-header-panel/paper-header-panel.html">
 
     <!-- 2. Use an HTML Import to bring in some elements. -->
     <link rel="import" href="../bower_components/paper-button/paper-button.html">
     <link rel="import" href="../bower_components/paper-input/paper-input.html">
   </head>
-  <body>
+  <body fullbreed unresolved>
     <!-- 3. Declare the element. Configure using its attributes. -->
+    <paper-toolbar>
+      <paper-tabs id = 'toolbarTabs'>
+
+        <paper-tab>Our Story</paper-tab>
+        <paper-tab>Team</paper-tab>
+        <paper-tab>Projects</paper-tab>
+      </paper-tabs>
+    </paper-toolbar>
     <paper-input label="Your name here"></paper-input>
-    <paper-button>Say Hello</paper-button>
-    <div id="greeting">asdf</div>
+  
+    <paper-button toggles>Say Hello</paper-button>
+    <div id="greeting"></div>
+
 
     <script>
       // To ensure that elements are ready on polyfilled browsers, 
