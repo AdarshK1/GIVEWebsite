@@ -48,6 +48,7 @@
         button.addEventListener('click', function() {
           greeting.textContent = 'Hello, ' + input.value;
         });
+        if (!$(window).scrollTop()) {paper-toolbar.style.--paper-toolbar-background = "#111111"};
       });
     </script>
   </body>
