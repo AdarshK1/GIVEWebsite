@@ -3,11 +3,25 @@
 	src:"bower_components/font-roboto";
 }
 
+/*general element css*/
+html{
+	padding: 0;
+	margin: 0;
+	border: none;
+}
 body{
 	font-family: "roboto";
 	padding: 0;
 	margin: 0;
 }
+
+a{
+	text-decoration: none;
+	color: black;
+	target = "_blank"
+}
+
+/*toolbar element css*/
 
 paper-tab{
 	padding-left: 5vw;
@@ -30,7 +44,7 @@ paper-toolbar{
 }
 
 .hero{
-	background: url(Assets/coreTeamPicMediumDarkBlur.png);
+	background: url(Assets/coreTeamPicMoreDarkBlur.png);
 	-webkit-background-size: cover;
   	-moz-background-size: cover;
   	-o-background-size: cover;
@@ -45,3 +59,113 @@ paper-toolbar{
 	vertical-align: middle;
 	height: 700px;
 }
+
+.hero .text h1{
+	color: #FFFFFF;
+	-vendor-animation-duration: 4s;
+	font-size: 5vw;
+	padding-left: 2vw;
+	padding-right: 2vw;
+	text-decoration: none;
+}
+
+/*Footer and social media css*/
+.footer{
+	color: #D32F2F;
+	background-color: #D32F2F;
+	margin: 0;
+	padding: 0;
+	border: none;
+}
+
+.footer ul{
+	padding: 10px;
+	margin: 0;
+  -webkit-transform: translate(-270px, 0);
+  -moz-transform: translate(-270px, 0);
+  -ms-transform: translate(-270px, 0);
+  -o-transform: translate(-270px, 0);
+  transform: translate(-270px, 0);
+  background-color: #D32F2F;
+}
+.footer ul li {
+  display: block;
+  margin: 5px;
+  background: rgba(0, 0, 0, 0.36);
+  width: 300px;
+  text-align: right;
+  padding: 10px;
+
+  -webkit-border-radius: 0 30px 30px 0;
+  -moz-border-radius: 0 30px 30px 0;
+  border-radius: 0 30px 30px 0;
+  -webkit-transition: all 1s;
+  -moz-transition: all 1s;
+  -ms-transition: all 1s;
+  -o-transition: all 1s;
+  transition: all 1s;
+}
+
+.footer ul li:hover {
+  -webkit-transform: translate(110px, 0);
+  -moz-transform: translate(110px, 0);
+  -ms-transform: translate(110px, 0);
+  -o-transform: translate(110px, 0);
+  transform: translate(110px, 0);
+  background: rgba(255, 255, 255, 0.4);
+}
+
+.footer ul li:hover a {
+  color: #000;
+}
+
+.footer ul li:hover i {
+  color: #fff;
+  background: rgba(0, 0, 0, 0.36);
+  -webkit-transform: rotate(360deg);
+  -moz-transform: rotate(360deg);
+  -ms-transform: rotate(360deg);
+  -o-transform: rotate(360deg);
+  transform: rotate(360deg);
+  -webkit-transition: all .5s;
+  -moz-transition: all .5s;
+  -ms-transition: all .5s;
+  -o-transition: all .5s;
+  transition: all .5s;
+}
+
+.footer ul li i {
+  margin-left: 10px;
+  color: #000;
+  background: #fff;
+  padding: 10px;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  font-size: 20px;
+  background: #ffffff;
+  -webkit-transform: rotate(0deg);
+  -moz-transform: rotate(0deg);
+  -ms-transform: rotate(0deg);
+  -o-transform: rotate(0deg);
+  transform: rotate(0deg);
+}
+
+/*about us section css*/
+
+.aboutUs{
+
+}
+
+.aboutUs h1{
+	color: #D32F2F;
+	font-size:3vw;
+	text-align: center;
+}
+
+
+
+
+
