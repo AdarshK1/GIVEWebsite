@@ -12,6 +12,7 @@ body{
 paper-tab{
 	padding-left: 5vw;
 	padding-right: 5vw;
+	font-size: 1.4em
 }
 
 paper-toolbar{
@@ -19,8 +20,28 @@ paper-toolbar{
 	color: #D32F2F;
 	--paper-toolbar-background: #D32F2F;
 	--paper-toolbar-color:#D32F2F;
+	position: fixed;
+	z-index: 90;
+	width: 100%;
 }
 
 #toolbarTabs{
 	padding-left: 50vw;
+}
+
+.hero{
+	background: url(Assets/coreTeamPicMediumDarkBlur.png);
+	-webkit-background-size: cover;
+  	-moz-background-size: cover;
+  	-o-background-size: cover;
+  	background-size: cover;
+  	width: 100%;
+  	display: table;
+}
+
+.hero .text{
+	display: table-cell;
+	text-align: center;
+	vertical-align: middle;
+	height: 700px;
 }

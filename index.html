@@ -8,47 +8,55 @@
     }; /* Notice the semicolon here */
   }
 </style>
-    <script src="bower_components/webcomponentsjs/webcomponents-lite.js"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href="elements/todo-app.html" rel="import">
-    <link href="../bower_components/paper-toolbar/paper-toolbar.html" rel="import">
+    <script src="bower_components/webcomponentsjs/webcomponents-lite.js"></script>
+    <!-- This is the stylesheet used-->
     <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="animate.css">
+    <!-- Importing all used Polymer Components-->
+    <link href="../bower_components/paper-toolbar/paper-toolbar.html" rel="import">
     <link rel="stylesheet" type="text/css" href="../bower_components/paper-tabs/paper-tabs.html">
 
-    <link rel="import" href="../bower-components/core-component-page/core-component-page.html">
     <link rel="import" href="../bower_components/paper-header-panel/paper-header-panel.html">
 
     <!-- 2. Use an HTML Import to bring in some elements. -->
     <link rel="import" href="../bower_components/paper-button/paper-button.html">
-    <link rel="import" href="../bower_components/paper-input/paper-input.html">
   </head>
-  <body fullbreed unresolved>
+  <body >
     <!-- 3. Declare the element. Configure using its attributes. -->
-    <paper-toolbar>
-      <paper-tabs id = 'toolbarTabs'>
+    
+    
+    
+    <paper-header-panel mode="standard">
+      <paper-toolbar id = "toolbar">
+        <paper-tabs id = 'toolbarTabs'>
+          <paper-tab>Our Story</paper-tab>
+          <paper-tab>Team</paper-tab>
+          <paper-tab>Projects</paper-tab>
+        </paper-tabs>
+      </paper-toolbar>
+    </paper-header-panel>
+    <section class = "hero">
+      <section class="text">
+          <h1>Welcome to Growth and Inspiration through Volunteering and Education!</h1>
+      </section>
+    </section>
+<img src="Assets/coreTeamPic.jpg">
+<img src="Assets/coreTeamPic.jpg">
+<img src="Assets/coreTeamPic.jpg">
+<img src="Assets/coreTeamPic.jpg">
 
-        <paper-tab>Our Story</paper-tab>
-        <paper-tab>Team</paper-tab>
-        <paper-tab>Projects</paper-tab>
-      </paper-tabs>
-    </paper-toolbar>
-    <paper-input label="Your name here"></paper-input>
-  
-    <paper-button toggles>Say Hello</paper-button>
-    <div id="greeting"></div>
+    <script type="text/javascript">
 
-
-    <script>
-      // To ensure that elements are ready on polyfilled browsers, 
-      // wait for WebComponentsReady. 
-      document.addEventListener('WebComponentsReady', function() {
-        var input = document.querySelector('paper-input');
-        var button = document.querySelector('paper-button');
-        var greeting = document.getElementById("greeting");
-        button.addEventListener('click', function() {
-          greeting.textContent = 'Hello, ' + input.value;
-        });
-        if (!$(window).scrollTop()) {paper-toolbar.style.--paper-toolbar-background = "#111111"};
+      $(document).ready(function(){
+        if (!$(window).scrollTop()) {
+          document.getElementById('toolbar').style.--paper-toolbar-color = "transparent";
+        };
+        else{
+          document.getElementById('toolbar').style.--paper-toolbar-color = "#D32F2F";
+        }
       });
+
     </script>
+
   </body>
