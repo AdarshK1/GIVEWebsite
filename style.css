@@ -1,7 +1,17 @@
+@import url(https://fonts.googleapis.com/css?family=Cabin+Condensed);
 @font-face{
-	font-family: "roboto"
+  font-family: "Cabin";
+  src:url(https://fonts.googleapis.com/css?family=Cabin+Condensed);
+}
+@font-face{
+	font-family: "roboto";
 	src:"bower_components/font-roboto";
 }
+@font-face{
+  font-family: "AliquamReg";
+  src:url("Aliquam Font/Aliquam.ttf");
+}
+
 
 /*general element css*/
 html{
@@ -10,7 +20,7 @@ html{
 	border: none;
 }
 body{
-	font-family: "roboto";
+	font-family: "AliquamReg";
 	padding: 0;
 	margin: 0;
 }
@@ -24,23 +34,20 @@ a{
 /*toolbar element css*/
 
 paper-tab{
-	padding-left: 5vw;
-	padding-right: 5vw;
+	padding-left: 0vw;
+	padding-right: 7vw;
 	font-size: 1.4em
 }
 
 paper-toolbar{
-	background-color: #D32F2F;
-	color: #D32F2F;
-	--paper-toolbar-background: #D32F2F;
-	--paper-toolbar-color:#D32F2F;
 	position: fixed;
 	z-index: 90;
 	width: 100%;
+  box-shadow: rgba(0,0,0,.2) 3px 5px 5px;
 }
 
 #toolbarTabs{
-	padding-left: 50vw;
+	padding-left: 40vw;
 }
 
 .hero{
