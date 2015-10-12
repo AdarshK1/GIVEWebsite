@@ -8,8 +8,12 @@
 	src:"bower_components/font-roboto";
 }
 @font-face{
-  font-family: "AliquamReg";
+  font-family: "Aliquam";
   src:url("Aliquam Font/Aliquam.ttf");
+}
+@font-face{
+  font-family: "AliquamReg";
+  src:url("Aliquam Font/AliquamREG.ttf");
 }
 
 
@@ -20,7 +24,7 @@ html{
 	border: none;
 }
 body{
-	font-family: "AliquamReg";
+	font-family: "AliquamREG";
 	padding: 0;
 	margin: 0;
 }
@@ -36,7 +40,7 @@ a{
 paper-tab{
 	padding-left: 0vw;
 	padding-right: 7vw;
-	font-size: 1.4em
+	font-size: 1.4em;
 }
 
 paper-toolbar{
@@ -65,29 +69,64 @@ paper-toolbar{
 	text-align: center;
 	vertical-align: middle;
 	height: 700px;
+  font-family: "Aliquam"
 }
 
 .hero .text h1{
 	color: #FFFFFF;
 	-vendor-animation-duration: 4s;
-	font-size: 5vw;
+	font-size: 5em;
 	padding-left: 2vw;
 	padding-right: 2vw;
 	text-decoration: none;
 }
 
+
+/*about us section css*/
+
+.aboutUs{
+
+}
+
+.aboutUs h1{
+	color: #D32F2F;
+	font-size:3em;
+	text-align: right;
+  z-index: 5;
+  position: relative;
+  margin: 0;
+  padding: 0;
+  padding-top: 2vh;
+  padding-right: 12.5vw;
+}
+
+.aboutUs img{
+  text-align: left;
+  width: 45%;
+  float: left;
+  padding: 1vw 1vw 2vw 3vw;
+}
+
+.aboutUs span{
+  padding: 30vw;
+  font-size: 1.6em;
+  text-align: center;
+}
+
+
+
 /*Footer and social media css*/
 .footer{
-	color: #D32F2F;
-	background-color: #D32F2F;
-	margin: 0;
-	padding: 0;
-	border: none;
+  color: #D32F2F;
+  background-color: #D32F2F;
+  margin: 0;
+  padding: 0;
+  border: none;
 }
 
 .footer ul{
-	padding: 10px;
-	margin: 0;
+  padding: 10px;
+  margin: 0;
   -webkit-transform: translate(-270px, 0);
   -moz-transform: translate(-270px, 0);
   -ms-transform: translate(-270px, 0);
@@ -151,7 +190,7 @@ paper-toolbar{
   border-radius: 50%;
   width: 20px;
   height: 20px;
-  font-size: 20px;
+  font-size: 1.1em;
   background: #ffffff;
   -webkit-transform: rotate(0deg);
   -moz-transform: rotate(0deg);
@@ -159,20 +198,5 @@ paper-toolbar{
   -o-transform: rotate(0deg);
   transform: rotate(0deg);
 }
-
-/*about us section css*/
-
-.aboutUs{
-
-}
-
-.aboutUs h1{
-	color: #D32F2F;
-	font-size:3vw;
-	text-align: center;
-}
-
-
-
 
 
