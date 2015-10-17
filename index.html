@@ -25,15 +25,12 @@
     <link rel="stylesheet" type="text/css" href="../bower_components/paper-tabs/paper-tabs.html">
 
     <link rel="import" href="../bower_components/paper-header-panel/paper-header-panel.html">
-
-    <!-- 2. Use an HTML Import to bring in some elements. -->
     <link rel="import" href="../bower_components/paper-button/paper-button.html">
+    <link rel="import" href="../bower_components/paper-button/paper-material.html">
+    <link rel="import" href="landingPage.html">
   </head>
   <body >
     <!-- 3. Declare the element. Configure using its attributes. -->
-    
-    
-    
     <paper-header-panel mode="standard">
       <paper-toolbar id = "toolbar">
         <paper-tabs id = 'toolbarTabs'>
@@ -45,31 +42,38 @@
       </paper-toolbar>
     </paper-header-panel>
     <section class = "hero">
+      <paper-material elevation = "4">
       <section class="text">
           <h1 class = "animated fadeInLeft">Welcome to Growth and Inspiration through Volunteering and Education!</h1>
-      </section>
+      </section
+>    </paper-material>
     </section>
     <div class = "wrapper">
     <div class="aboutUs">
+      <paper-material elevation="1">
       <img src="Assets/give6.png">
       <h1 class = "animated fadeInRight">A little bit about us...</h1>
-      <span>Growth and Inspiration through Volunteering and Education (GIVE), is a non-profit organization founded and run by high school students serving the Washington D.C. metropolitan area. Our mission is to cultivate leadership among youth, primarily through a free tutoring program, as well as other activities. GIVE invests in the next generation of change-makers by providing opportunities in the fields of education, empowerment, and leadership.</span>
+      <p>Growth and Inspiration through Volunteering and Education (GIVE), is a non-profit organization founded and run by high school students serving the Washington D.C. metropolitan area. Our mission is to cultivate leadership among youth, primarily through a free tutoring program, as well as other activities. GIVE invests in the next generation of change-makers by providing opportunities in the fields of education, empowerment, and leadership.</p>
+    </paper-material>
     </div>
-
+    <br>
     <div class="joinTutoring">
-      <h1> Our Tutoring </h1>
-      <span>We work with different public facilities across the DC Metropolitan area to hold tutoring sessions, join our family!</span>
-      <img src="Assets/tutoringPic.png">
-      <paper-button raised> Join Us</paper-button>
+      <paper-material elevation ="1">
+        <h1> Our Tutoring </h1>
+        <img src="Assets/tutoringPic.png">
+        <p>We work with different public facilities across the DC Metropolitan area to hold tutoring sessions, join our family!</p>
+
+        <a href="https://docs.google.com/a/giveyouth.org/forms/d/1s3Z1FbY_7olih0IynuNgLkMMZqftHNF3ltomEkcVW6w/viewform" target="_blank"><paper-button id = "joinStudent" raised> Join Us as a Student</paper-button></a>
+        <a href="https://docs.google.com/a/giveyouth.org/forms/d/1NdSotY_gcke9mUKPG2Q1TyS58ltimCzLUucXNhcRV1U/viewform" target="_blank"><paper-button id="joinTutor" raised> Join Us as a Tutor</paper-button></a>
+        </paper-material>
     </div>
 </div>
-
-    <img src="Assets/coreTeamPic.jpg">
+    <br>
     <div class="footer">
       <ul>
-        <li><a href="http://twitter.com/gian_michelle" target = "_blank">Twitter <i class="fa fa-twitter"></i></a></li>
-        <li><a href="https://www.facebook.com/pages/GIVE-Growth-and-Inspiration-through-Volunteering-and-Education/104842809592156?sk=wall" target = "_blank">Facebook <i class="fa fa-facebook"></i></a></li>
-        <li><a href="http://www.google.com" target = "_blank">Email <i class="fa fa-inbox"></i></a></li>
+        <li><a href="http://twitter.com/gian_michelle" target = "_blank">Twitter  <i class="fa fa-twitter"></i></a></li>
+        <li><a href="https://www.facebook.com/pages/GIVE-Growth-and-Inspiration-through-Volunteering-and-Education/104842809592156?sk=wall" target = "_blank">Facebook  <i class="fa fa-facebook"></i></a></li>
+        <li><a href="http://www.google.com" target = "_blank">Email  <i class="fa fa-inbox"></i></a></li>
       </ul>
     </div>
   </body>

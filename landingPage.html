@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link href="../bower_components/polymer/polymer.html" rel="import">
+    <style is="custom-style">
+  paper-toolbar {
+    --paper-toolbar-background: #D32F2F; /* changes the background to blue*/
+    box-shadow: rgba(0,0,0,.2) 3px 5px 5px;
+    }; /* Notice the semicolon here */
+  }
+</style>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="bower_components/webcomponentsjs/webcomponents-lite.js"></script>
+    <script src="js/wow.min.js"></script>
+              <script>
+              new WOW().init();
+              </script>
+    <!-- This is the stylesheet used-->
+    <link href='http://fonts.googleapis.com/css?family=Raleway:400,200' rel='stylesheet' type='text/css'>
+    <link href="//netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="animate.css">
+    <!-- Importing all used Polymer Components-->
+    <link href="../bower_components/paper-toolbar/paper-toolbar.html" rel="import">
+    <link rel="stylesheet" type="text/css" href="../bower_components/paper-tabs/paper-tabs.html">
+
+    <link rel="import" href="../bower_components/paper-header-panel/paper-header-panel.html">
+    <link rel="import" href="../bower_components/paper-button/paper-button.html">
+    <link rel="import" href="../bower_components/paper-button/paper-material.html">
+</head>
+
+<dom-module id="element-name">
+<template>
+  <style>
+    @import url(https://fonts.googleapis.com/css?family=Cabin+Condensed);
+    @font-face{
+      font-family: "Cabin";
+      src:url(https://fonts.googleapis.com/css?family=Cabin+Condensed);
+    }
+    @font-face{
+      font-family: "roboto";
+      src:"bower_components/font-roboto";
+    }
+    @font-face{
+      font-family: "Aliquam";
+      src:url("Aliquam Font/Aliquam.ttf");
+    }
+    @font-face{
+      font-family: "AliquamReg";
+      src:url("Aliquam Font/AliquamREG.ttf");
+    }
+    /*toolbar element css*/
+
+    paper-tab{
+      padding-left: 0vw;
+      padding-right: 7vw;
+      font-size: 1.4em;
+    }
+
+    paper-toolbar{
+      position: fixed;
+      z-index: 90;
+      width: 100%;
+      box-shadow: rgba(0,0,0,.2) 3px 5px 5px;
+    }
+    paper-material{
+      overflow: hidden;
+    }
+    #toolbarTabs{
+      padding-left: 40vw;
+    }
+
+    .hero{
+      padding-top: 3vw;
+      background: url(Assets/coreTeamPicMoreDarkBlur.png);
+      -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+        width: 100%;
+        display: table;
+    }
+
+    .hero .text{
+      display: table-cell;
+      text-align: center;
+      vertical-align: middle;
+      height: 700px;
+      font-family: "Aliquam"
+    }
+
+    .hero .text h1{
+      color: #FFFFFF;
+      -vendor-animation-duration: 4s;
+      font-size: 5em;
+      padding-left: 2vw;
+      padding-right: 2vw;
+      text-decoration: none;
+    }
+
+
+    /*about us section css*/
+    .wrapper{
+      margin-left:auto;
+        margin-right:auto;
+        height:auto; 
+        width:auto;
+        overflow: hidden;
+    }
+
+    .aboutUs{
+      float: left;
+    }
+
+    .aboutUs h1{
+      color: #D32F2F;
+      font-size:4em;
+      text-align: right;
+      z-index: 5;
+      position: relative;
+      margin: 0;
+      padding: 0;
+      padding-top: 2vh;
+      padding-right: 12.5vw;
+    }
+
+    .aboutUs img{
+      text-align: left;
+      width: 45%;
+      float: left;
+      padding: 1vw 1vw 2vw 3vw;
+    }
+
+    .aboutUs p{
+      padding-top: 3vw;
+      font-size: 1.6em;
+      text-align: center;
+      line-height: 200%;
+    }
+
+    .aboutUs paper-material{
+      overflow: hidden;
+    }
+
+    .joinTutoring{
+      text-align: center;
+      float: left;
+      width: 100%;
+    }
+    .joinTutoring img{
+      float: right;
+      text-align: right;
+      width: 45%;
+      padding: 1vw 3vw 2vw 1vw;
+    }
+
+    .joinTutoring h1{
+      color: #D32F2F;
+      font-size:3em;
+      text-align: left;
+      z-index: 5;
+      position: relative;
+      margin: 0;
+      padding-top: 1vw;
+      padding-left: 20vw;
+    }
+
+    .joinTutoring p{
+      padding: 0 10vw 0 10vw;
+      font-size: 2em;
+      text-align: center;
+      padding: 5vw;
+    }
+
+    .joinTutoring paper-material{
+      overflow: hidden;
+      width: 100%;
+    }
+
+    .joinTutoring paper-button{
+      background-color: #D32F2F;
+      color: #FFFFFF;
+    }
+
+  </style>
+
+  
+        <section class = "hero">
+          <paper-material elevation = "4">
+          <section class="text">
+              <h1 class = "animated fadeInLeft">Welcome to Growth and Inspiration through Volunteering and Education!</h1>
+          </section
+    >    </paper-material>
+        </section>
+        <div class = "wrapper">
+        <div class="aboutUs">
+          <paper-material elevation="1">
+          <img src="Assets/give6.png">
+          <h1 class = "animated fadeInRight">A little bit about us...</h1>
+          <p>Growth and Inspiration through Volunteering and Education (GIVE), is a non-profit organization founded and run by high school students serving the Washington D.C. metropolitan area. Our mission is to cultivate leadership among youth, primarily through a free tutoring program, as well as other activities. GIVE invests in the next generation of change-makers by providing opportunities in the fields of education, empowerment, and leadership.</p>
+        </paper-material>
+        </div>
+        <br>
+        <div class="joinTutoring">
+          <paper-material elevation ="1">
+            <h1> Our Tutoring </h1>
+            <img src="Assets/tutoringPic.png">
+            <p>We work with different public facilities across the DC Metropolitan area to hold tutoring sessions, join our family!</p>
+
+            <a href="https://docs.google.com/a/giveyouth.org/forms/d/1s3Z1FbY_7olih0IynuNgLkMMZqftHNF3ltomEkcVW6w/viewform" target="_blank"><paper-button id = "joinStudent" raised> Join Us as a Student</paper-button></a>
+            <a href="https://docs.google.com/a/giveyouth.org/forms/d/1NdSotY_gcke9mUKPG2Q1TyS58ltimCzLUucXNhcRV1U/viewform" target="_blank"><paper-button id="joinTutor" raised> Join Us as a Tutor</paper-button></a>
+            </paper-material>
+        </div>
+    </div>
+  </template>
+</dom-module>
+<script>
+  Polymer({
+    is: "landingPage",
+    properties: {
+        
+        },
+    ready: function(e){
+        
+    }
+  });
+</script>

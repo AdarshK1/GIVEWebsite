@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<!--All CSS Stylesheets imported-->
+		<link rel="stylesheet" type="text/css" href="style.css">
+		<link rel="stylesheet" type="text/css" href="teamStyle.css">
+		    <style is="custom-style">
+		  paper-toolbar {
+		    --paper-toolbar-background: #D32F2F; /* changes the background to blue*/
+		    box-shadow: rgba(0,0,0,.2) 3px 5px 5px;
+		    }; /* Notice the semicolon here */
+		  }
+		</style>
+		    <meta name="viewport" content="width=device-width, initial-scale=1">
+		    <script src="bower_components/webcomponentsjs/webcomponents-lite.js"></script>
+		    
+		    <!-- This is the stylesheet used-->
+		    <link href='http://fonts.googleapis.com/css?family=Raleway:400,200' rel='stylesheet' type='text/css'>
+		    <link href="//netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+		    <link rel="stylesheet" type="text/css" href="style.css">
+		    <link rel="stylesheet" type="text/css" href="animate.css">
+		    <!-- Importing all used Polymer Components-->
+		    <link href="../bower_components/paper-toolbar/paper-toolbar.html" rel="import">
+		    <link rel="stylesheet" type="text/css" href="../bower_components/paper-tabs/paper-tabs.html">
+
+		    <link rel="import" href="../bower_components/paper-header-panel/paper-header-panel.html">
+		    <link rel="import" href="../bower_components/paper-button/paper-button.html">
+		    <link rel="import" href="../bower_components/paper-button/paper-material.html">
+	</head>
+	<body>
+		<paper-header-panel mode="standard">
+		  <paper-toolbar id = "toolbar">
+		    <paper-tabs id = 'toolbarTabs'>
+		      <paper-tab>Our Story</paper-tab>
+		      <paper-tab>Team</paper-tab>
+		      <paper-tab>Projects</paper-tab>
+		      <paper-tab>Donate</paper-tab>
+		    </paper-tabs>
+		  </paper-toolbar>
+		</paper-header-panel>
+	</body>
+</html>
