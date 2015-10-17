@@ -26,31 +26,31 @@
 
     <link rel="import" href="../bower_components/paper-header-panel/paper-header-panel.html">
     <link rel="import" href="../bower_components/paper-button/paper-button.html">
-    <link rel="import" href="../bower_components/paper-button/paper-material.html">
+    <link rel="import" href="../bower_components/paper-material/paper-material.html">
     <link rel="import" href="landingPage.html">
   </head>
-  <body >
+  <body>
     <!-- 3. Declare the element. Configure using its attributes. -->
     <paper-header-panel mode="standard">
       <paper-toolbar id = "toolbar">
-        <paper-tabs id = 'toolbarTabs'>
-          <paper-tab>Our Story</paper-tab>
-          <paper-tab><a href="team.html">Team</a></paper-tab>
-          <paper-tab>Projects</paper-tab>
-          <paper-tab>Donate</paper-tab>
+        <paper-tabs id = "toolbarTabs">
+          <paper-tab id = "toolTab">Our Story</paper-tab>
+          <paper-tab id = "toolTab"><a href="team.html">Team</a></paper-tab>
+          <paper-tab id = "toolTab">Projects</paper-tab>
+          <paper-tab id = "toolTab">Donate</paper-tab>
         </paper-tabs>
       </paper-toolbar>
     </paper-header-panel>
     <section class = "hero">
-      <paper-material elevation = "4">
+      <paper-material elevation = "4" class="landingSections">
       <section class="text">
           <h1 class = "animated fadeInLeft">Welcome to Growth and Inspiration through Volunteering and Education!</h1>
-      </section
->    </paper-material>
+      </section>
+    </paper-material>
     </section>
     <div class = "wrapper">
     <div class="aboutUs">
-      <paper-material elevation="1">
+      <paper-material elevation="1" class="landingSections">
       <img src="Assets/give6.png">
       <h1 class = "animated fadeInRight">A bit about us...</h1>
       <p>Growth and Inspiration through Volunteering and Education (GIVE), is a non-profit organization founded and run by high school students serving the Washington D.C. metropolitan area. Our mission is to cultivate leadership among youth, primarily through a free tutoring program, as well as other activities. GIVE invests in the next generation of change-makers by providing opportunities in the fields of education, empowerment, and leadership.</p>
@@ -58,7 +58,7 @@
     </div>
     <br>
     <div class="joinTutoring">
-      <paper-material elevation ="1">
+      <paper-material elevation ="1" class="landingSections">
         <h1> Our Tutoring </h1>
         <img src="Assets/tutoringPic.png">
         <p>We work with different public facilities across the DC Metropolitan area to hold tutoring sessions, join our family!</p>

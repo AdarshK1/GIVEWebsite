@@ -9,7 +9,9 @@
 		    --paper-toolbar-background: #D32F2F; /* changes the background to blue*/
 		    box-shadow: rgba(0,0,0,.2) 3px 5px 5px;
 		    }; /* Notice the semicolon here */
-		  }
+		    paper-tabs{
+		    	--paper-tabs-selection-bar-color: #D32F2F;
+		    };
 		</style>
 		    <meta name="viewport" content="width=device-width, initial-scale=1">
 		    <script src="bower_components/webcomponentsjs/webcomponents-lite.js"></script>
@@ -19,69 +21,140 @@
 		    <link href="//netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
 		    <link rel="stylesheet" type="text/css" href="style.css">
 		    <link rel="stylesheet" type="text/css" href="animate.css">
-		    		    <link rel="stylesheet" type="text/css" href="teamStyle.css">
+		    <link rel="stylesheet" type="text/css" href="teamStyle.css">
 		    <!-- Importing all used Polymer Components-->
 		    <link href="../bower_components/paper-toolbar/paper-toolbar.html" rel="import">
 		    <link rel="stylesheet" type="text/css" href="../bower_components/paper-tabs/paper-tabs.html">
-
+		    <link rel="stylesheet" type="text/css" href="../bower_components/paper-tabs/paper-tab.html">
 		    <link rel="import" href="../bower_components/paper-header-panel/paper-header-panel.html">
 		    <link rel="import" href="../bower_components/paper-button/paper-button.html">
-		    <link rel="import" href="../bower_components/paper-button/paper-material.html">
+		    <link rel="import" href="../bower_components/paper-material/paper-material.html">
 		    <link rel="import" href="../bower_components/iron-pages/iron-pages.html">
 	</head>
 	<body>
 		<paper-header-panel mode="standard">
 		  <paper-toolbar id = "toolbar">
-		    <paper-tabs id = 'toolbarTabs'>
-		      <paper-tab>Our Story</paper-tab>
-		      <paper-tab>Team</paper-tab>
-		      <paper-tab>Projects</paper-tab>
-		      <paper-tab>Donate</paper-tab>
+		    <paper-tabs id = "toolbarTabs">
+		      <paper-tab id = "toolTab">Our Story</paper-tab>
+		      <paper-tab id = "toolTab">Team</paper-tab>
+		      <paper-tab id = "toolTab">Projects</paper-tab>
+		      <paper-tab id = "toolTab">Donate</paper-tab>
 		    </paper-tabs>
 		  </paper-toolbar>
 		</paper-header-panel>	
 
+		<div class = "introText">
+			<p>GIVE is run by a group of super passionate and enthusiastic high school and college students. We pride ourselves on being completely youth-run; GIVE is a non-profit created by kids in the hopes of helping other kids.</p>
+		</div>
+
 		<div class="wrapper">
-			<template is="dom-bind" id="scope">
-			  <span>{{number}}</span>
-			</template>
+			
+			<template is="dom-bind" id="scope" notify="true" >
+				<paper-tabs selected="{{selected}}" id = "teamTabs">
+			  		<paper-tab class="teamTab" id="boardButton">Board</paper-tab>
+		      		<paper-tab class="teamTab" id="execButton">Executive</paper-tab>
+			  		<paper-tab class="teamTab" id="managerButton">Managers</paper-tab>
+			  		<paper-tab class="teamTab" id="coreButton">Core</paper-tab>
+				</paper-tabs>
 
-			<paper-tabs selected = "{{selected}}">
-			  <paper-tab>Board</paper-tab>
-		      <paper-tab>Executive</paper-tab>
-			  <paper-tab>Managers</paper-tab>
-			  <paper-tab>Core</paper-tab>
-			</paper-tabs>
+				<iron-pages selected="{{selected}}" id="pages">
+					<div class = "board">
+						<div class = "firstHalf">
+							<div class="teamPic">
+					    		<img src="Assets/teamPictures/kevinPic.png">
+					    		<p>Kevin Q. Cao</p>
+					    		<p>Co-Founder</p>
+							</div>
+							<div class="teamPic">
+					    		<img src="Assets/teamPictures/kartikPic.png">
+					    		<p>Kartik Gupta</p>
+					    		<p>Co-Founder</p>
+							</div>
+							<div class="teamPic">
+					    		<img src="Assets/teamPictures/kartikPic.png">
+					    		<p>Kartik Gupta</p>
+							</div>
+						</div>
+						<div class = "secondHalf">
+							<div class="teamPic">
+					    		<img src="Assets/teamPictures/kartikPic.png">
+					    		<p>Kartik Gupta</p>
+							</div>
+							<div class="teamPic">
+					    		<img src="Assets/teamPictures/kartikPic.png">
+					    		<p>Kartik Gupta</p>
+							</div>
+							<div class="teamPic">
+					    		<img src="Assets/teamPictures/kartikPic.png">
+					    		<p>Kartik Gupta</p>
+							</div>
+						</div>
+					</div>
+					<div class = "exec">
+						<div class = "firstHalf">
+							<div class="teamPic">
+					    		<img src="Assets/teamPictures/rachelPic.jpg">
+					    		<p>Rachel Alexander</p>
+							</div>
+							<div class="teamPic">
+					    		<img src="Assets/teamPictures/rashelPic.jpg">
+					    		<p>Rashel Bajaj</p>
+							</div>
+							<div class="teamPic">
+					    		<img src="Assets/teamPictures/abhiPic.jpg">
+					    		<p>Abhi Chadha</p>
+							</div>
+						</div>
+						<div class = "secondHalf">
+							<div class="teamPic">
+					    		<img src="Assets/teamPictures/mattPic.jpg">
+					    		<p>Matt Huo</p>
+							</div>
+							<div class="teamPic">
+					    		<img src="Assets/teamPictures/sruthiPic.png">
+					    		<p>Sruthi Kodali</p>
+							</div>
+							<div class="teamPic">
+					    		<img src="Assets/teamPictures/adarshPic.jpg">
+					    		<p>Adarsh Kulkarni</p>
+							</div>
+							<div class="teamPic">
+					    		<img src="Assets/teamPictures/christinaPic.jpg">
+					    		<p>Christina Wei</p>
+							</div>
+						</div>
+					</div>
+					<div class = "manager"></div>
+					<div class = "core"></div>
+			</iron-pages>
 
-			<iron-pages selected = "{{selected}}">
-				<div class = "board">
-					<table>
+			<script>
+		  		window.addEventListener('WebComponentsReady', function() {
+		    		var template = document.querySelector('template[is="dom-bind"]');
+		    		template.selected = 0; // display the number 1
+		  		});
+		  		var pages = document.querySelector('#pages');
+		  		boardButton.addEventListener('click', function(){
+		  			
+		  			pages.selected = 0;
+		  		});
 
-					</table>
-				</div>
+		  		execButton.addEventListener('click', function(){
+		  			pages.selected = 1;
+		  		});
+		  		managerButton.addEventListener('click', function(){
+		  			pages.selected = 2;
+		  		});
+		  		coreButton.addEventListener('click', function(){
+		  			pages.selected = 3;
+		  		});
 
-				<div class = "exec">
+			</script>
 
-				</div>
+		</template>
 
-				<div class ="manager">
-
-				</div>
-
-				<div class = "core">
-
-				</div>
-
-			</div>
-
-		</iron-pages>
+	</div>
 		
-		<script>
-		  window.addEventListener('WebComponentsReady', function() { //You have to make sure that all custom elements are loaded
-		    var scope = document.querySelector("template#scope");
-		    scope.number = 1; // display the number 1
-		  });
-		</script>
 
 		</div>
 

@@ -27,7 +27,7 @@ a{
   color: white;
 }
 /*toolbar element css*/
-paper-tab{
+#toolTab{
 	padding-left: 0vw;
 	padding-right: 7vw;
 	font-size: 1.4em;
@@ -39,7 +39,7 @@ paper-toolbar{
 	width: 100%;
   box-shadow: rgba(0,0,0,.2) 3px 5px 5px;
 }
-paper-material{
+.landingSection{
   overflow: hidden;
   box-sizing: border-box;
 }

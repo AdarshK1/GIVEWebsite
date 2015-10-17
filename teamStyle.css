@@ -1,8 +1,80 @@
-.wrapper{
-	height: 100vh;
-	width: 100%
+
+.introText{
+	padding-top: 15vh;
 }
 
-paper-tabs{
-	
+.introText p{
+	color: #D32F2F;
+	text-align: center;
+	font-size: 2em;
+	padding: 0 10vw;
+}
+
+.wrapper{
+	padding-top: 10vh;
+	width: 100%;
+	text-align: center;
+}
+
+.teamTabs{
+	text-align: center;
+	display: table;
+}
+
+.teamTab{
+	text-align: center;
+	font-size: 2em;
+	padding-left: 2vw;
+	padding-right: 2vw;
+}
+
+#pages{
+	width: auto;
+	margin: 0 auto;
+ }
+
+.board{
+	width: auto;
+	margin: 0 auto;
+	display: table;
+}
+.firstHalf{
+	display: table;
+	position: relative;
+}
+.secondHalf{
+	display: table;
+	position: absolute;
+}
+.firstHalf div{
+	display: table-cell;
+	padding: 2vw;
+    margin: 0 auto;
+}
+.secondHalf div{
+	display: table-cell;
+	padding: 2vw;
+    margin: 0 auto;
+}
+
+.board img{
+	height: 250px;
+	width: 250px; 
+	border-radius: 10px;
+}
+
+.board p{
+	margin: 1vh;
+}
+
+.exec img{
+    height: 250px;
+    width: 210px; 
+    border-radius: 10px;
+}
+
+.exec{
+    width: auto;
+    margin: 0 auto;
+    display: table;
 }
