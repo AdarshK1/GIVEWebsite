@@ -1,8 +1,3 @@
-@import url(https://fonts.googleapis.com/css?family=Cabin+Condensed);
-@font-face{
-  font-family: "Cabin";
-  src:url(https://fonts.googleapis.com/css?family=Cabin+Condensed);
-}
 @font-face{
 	font-family: "roboto";
 	src:"bower_components/font-roboto";
@@ -15,8 +10,6 @@
   font-family: "AliquamReg";
   src:url("Aliquam Font/AliquamREG.ttf");
 }
-
-
 /*general element css*/
 html{
 	padding: 0;
@@ -33,9 +26,7 @@ a{
 	text-decoration: none;
   color: white;
 }
-
 /*toolbar element css*/
-
 paper-tab{
 	padding-left: 0vw;
 	padding-right: 7vw;
