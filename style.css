@@ -50,20 +50,27 @@ paper-toolbar{
 }
 paper-material{
   overflow: hidden;
+  box-sizing: border-box;
 }
 #toolbarTabs{
 	padding-left: 40vw;
 }
 
 .hero{
-  padding-top: 3vw;
-	background: url(Assets/coreTeamPicMoreDarkBlur.png);
+	background: url(Assets/coreTeamPicMoreDarkBlur.png) no-repeat center center scroll;
 	-webkit-background-size: cover;
   	-moz-background-size: cover;
   	-o-background-size: cover;
   	background-size: cover;
   	width: 100%;
-  	display: table;
+    height: 100vh;
+    margin-top: 3vw;
+  	display: block;
+    box-sizing: border-box;
+}
+
+.hero paper-material{
+  height: 100vh;
 }
 
 .hero .text{
@@ -198,10 +205,10 @@ paper-material{
   -moz-border-radius: 0 30px 30px 0;
   border-radius: 0 30px 30px 0;
   -webkit-transition: all 1s;
-  -moz-transition: all 1s;
-  -ms-transition: all 1s;
-  -o-transition: all 1s;
-  transition: all 1s;
+  -moz-transition: all .5s;
+  -ms-transition: all .5s;
+  -o-transition: all .5s;
+  transition: all .5s;
 }
 
 .footer ul li:hover {
