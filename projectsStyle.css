@@ -1,0 +1,32 @@
+.apsat{
+	width: 100vw;
+}
+
+paper-card{
+	width: 100%;d
+	display: table;
+}
+
+paper-card h1 {
+	color: #D32F2F;
+	text-align: center;
+	font-size: 2.5em;
+}
+
+paper-card img{
+	float:left;
+	padding: 1vh 1vw;
+	display: table-cell;
+	width: 40% !important;
+	height: auto !important;
+
+}
+
+paper-card p {
+	top: 50%;
+	padding-left: 5vw;
+	font-size: 1.2em;
+	text-align: center;
+	display: table-cell;
+	vertical-align: middle;
+}

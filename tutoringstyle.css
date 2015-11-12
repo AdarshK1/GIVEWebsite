@@ -1,5 +1,5 @@
-google-map{
-	height: 50vh;
+.map{
+	height: 500px;
 	width: 90vw;
 	text-align: center;
 	margin-left: 5vw;
@@ -15,7 +15,11 @@ paper-card{
 	display: table-cell;
 	padding: 2vw;
 	height: 10vh;
-	width: 18vw;
-	--paper-card-header-color: #D32F2F;
+	width: 25vw;
+	--paper-card-header-color: #000000;
 
+}
+
+paper-card .card-content{
+	padding: .5vw;
 }

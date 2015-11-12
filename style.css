@@ -29,7 +29,7 @@ a{
 /*toolbar element css*/
 #toolTab{
 	padding-left: 0vw;
-	padding-right: 7vw;
+	padding-right: 5vw;
 	font-size: 1.4em;
 }
 
@@ -44,7 +44,9 @@ paper-toolbar{
   box-sizing: border-box;
 }
 #toolbarTabs{
-	padding-left: 40vw;
+  text-align: right;
+  float: right;
+	padding-left: 27vw;
 }
 
 .hero{

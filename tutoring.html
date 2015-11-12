@@ -12,9 +12,28 @@
 		    paper-tabs{
 		    	--paper-tabs-selection-bar-color: #D32F2F;
 		    };
-		    paper-card{
-		    	--paper-card-header-color: #D32F2F;
-		    };
+		    .map{
+				height: 50vh;
+				width: 90vw;
+				text-align: center;
+				margin-left: 5vw;
+				padding-top: 15vw;
+				margin-right: 5vw;
+			}
+
+			.centers{
+				display: table;
+				margin-left: 5vw;
+				margin-right: 5vw;
+			}
+
+			paper-card{
+				display: table-cell;
+				height: 10vh;
+				width: 22.5vw;
+				--paper-card-header-color: #D32F2F;
+
+			}
 
 		</style>
 
@@ -29,8 +48,8 @@
 		    <link rel="stylesheet" type="text/css" href="animate.css">
 		    <!-- Importing all used Polymer Components-->
 		    <link href="../bower_components/paper-toolbar/paper-toolbar.html" rel="import">
-		    <link rel="stylesheet" type="text/css" href="../bower_components/paper-tabs/paper-tabs.html">
-		    <link rel="stylesheet" type="text/css" href="../bower_components/paper-tabs/paper-tab.html">
+		    <link rel="stylesheet" href="../bower_components/paper-tabs/paper-tabs.html">
+		    <link rel="stylesheet" href="../bower_components/paper-tabs/paper-tab.html">
 		    <link rel="import" href="../bower_components/paper-header-panel/paper-header-panel.html">
 		    <link rel="import" href="../bower_components/paper-button/paper-button.html">
 		    <link rel="import" href="../bower_components/paper-material/paper-material.html">
@@ -41,19 +60,20 @@
 
 	</head>
 <body>
-	<paper-header-panel mode="standard">
+	<paper-header-panel>
 		  <paper-toolbar id = "toolbar">
 		    <paper-tabs id = "toolbarTabs">
 		      <paper-tab id = "toolTab">Our Story</paper-tab>
-		      <paper-tab id = "toolTab">Team</paper-tab>
-		      <paper-tab id = "toolTab">Tutoring</paper-tab>
-		      <paper-tab id = "toolTab">Projects</paper-tab>
+		      <paper-tab id = "toolTab"><a href = "team.html">Team</a></paper-tab>
+		      <paper-tab id = "toolTab"><a href="tutoring.html">Tutoring</a></paper-tab>
+		      <paper-tab id = "toolTab"><a href="projects.html">Projects</a></paper-tab>
 		      <paper-tab id = "toolTab">Donate</paper-tab>
 		    </paper-tabs>
 		  </paper-toolbar>
-		</paper-header-panel>	
+		</paper-header-panel>
 
-	<google-map fit-to-markers> 
+
+	<google-map class = "map" fit-to-markers> 
 		<google-map-marker latitude="38.8374" longitude="-77.16527">
 			Mason District Government Center
 		</google-map-marker>
@@ -77,59 +97,48 @@
 	<div class = "centers">
 
 		<paper-card heading="Mason District Center" elevation="1">
-		  <div class="card-content"><p>Managers: Katie Pruitt, Jeffrey Yoo</p>
-		  							<p>Session: Sunday 2-4 pm</p>
+		  <div class="card-content"><p>Katie Pruitt, Jeffrey Yoo</p>
+		  							<p>Sunday 2-4 pm</p>
 		  							<p>masondistrict.center@giveyouth.org</p></div>
 		</paper-card>
 		<paper-card heading="Mason District Center" elevation="1">
-		  <div class="card-content"><p>Managers: Katie Pruitt, Jeffrey Yoo</p>
-		  							<p>Session: Sunday 2-4 pm</p>
+		  <div class="card-content"><p>Katie Pruitt, Jeffrey Yoo</p>
+		  							<p>Sunday 2-4 pm</p>
 		  							<p>masondistrict.center@giveyouth.org</p></div>
 		</paper-card>
 		<paper-card heading="Mason District Center" elevation="1">
-		  <div class="card-content"><p>Managers: Katie Pruitt, Jeffrey Yoo</p>
-		  							<p>Session: Sunday 2-4 pm</p>
+		  <div class="card-content"><p>Katie Pruitt, Jeffrey Yoo</p>
+		  							<p>Sunday 2-4 pm</p>
 		  							<p>masondistrict.center@giveyouth.org</p></div>
 		</paper-card>
 		<paper-card heading="Mason District Center" elevation="1">
-		  <div class="card-content"><p>Managers: Katie Pruitt, Jeffrey Yoo</p>
-		  							<p>Session: Sunday 2-4 pm</p>
+		  <div class="card-content"><p>Katie Pruitt, Jeffrey Yoo</p>
+		  							<p>Sunday 2-4 pm</p>
 		  							<p>masondistrict.center@giveyouth.org</p></div>
 		</paper-card>
-		<paper-card heading="Mason District Center" elevation="1">
-	  		<div class="card-content"><p>Managers: Katie Pruitt, Jeffrey Yoo</p>
-	  								  <p>Session: Sunday 2-4 pm</p>
-	  								  <p>masondistrict.center@giveyouth.org</p></div>
-		</paper-card>
-
 		
 
 	</div>
 	<div class = "centers">
 		<paper-card heading="Mason District Center" elevation="1">
-	  		<div class="card-content"><p>Managers: Katie Pruitt, Jeffrey Yoo</p>
-	  								  <p>Session: Sunday 2-4 pm</p>
+	  		<div class="card-content"><p>Katie Pruitt, Jeffrey Yoo</p>
+	  								  <p>Sunday 2-4 pm</p>
 	  								  <p>masondistrict.center@giveyouth.org</p></div>
 		</paper-card>
 		<paper-card heading="Mason District Center" elevation="1">
-	  		<div class="card-content"><p>Managers: Katie Pruitt, Jeffrey Yoo</p>
-	  								  <p>Session: Sunday 2-4 pm</p>
+	  		<div class="card-content"><p>Katie Pruitt, Jeffrey Yoo</p>
+	  								  <p>Sunday 2-4 pm</p>
 	  								  <p>masondistrict.center@giveyouth.org</p></div>
 		</paper-card>
 		<paper-card heading="Mason District Center" elevation="1">
-	  		<div class="card-content"><p>Managers: Katie Pruitt, Jeffrey Yoo</p>
-	  								  <p>Session: Sunday 2-4 pm</p>
+	  		<div class="card-content"><p>Katie Pruitt, Jeffrey Yoo</p>
+	  								  <p>Sunday 2-4 pm</p>
 	  								  <p>masondistrict.center@giveyouth.org</p></div>
 		</paper-card>
 		<paper-card heading="Mason District Center" elevation="1">
-	  		<div class="card-content"><p>Managers: Katie Pruitt, Jeffrey Yoo</p>
-	  								  <p>Session: Sunday 2-4 pm</p>
-	  								  <p masondistrict.center@giveyouth.org</p></div>
-		</paper-card>
-		<paper-card heading="Mason District Center" elevation="1">
-	  		<div class="card-content"><p>Managers: Katie Pruitt, Jeffrey Yoo</p>
-	  								  <p>Session: Sunday 2-4 pm</p>
-	  								  <p>masondistrict.center@giveyouth.org</p></div>
+	  		<div class="card-content"><p>Katie Pruitt, Jeffrey Yoo</p>
+	  								  <p>Sunday 2-4 pm</p>
+	  								  <p> masondistrict.center@giveyouth.org</p></div>
 		</paper-card>
 	</div>
 
