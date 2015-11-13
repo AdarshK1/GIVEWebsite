@@ -37,14 +37,16 @@ paper-material p {
 	width: 100%;
 }
 
-paper-card{
+#articles paper-card{
 	display: table-cell;
 	padding: 0;
 	width: 25vw;
 	height: 10vh;
 	text-align: center;
 }
-
+paper-card .card-content{
+	vertical-align: middle;
+}
 paper-card p{
 	text-align: center;
 }

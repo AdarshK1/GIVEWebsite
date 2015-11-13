@@ -13,7 +13,7 @@
 
 paper-card{
 	display: table-cell;
-	padding: 2vw;
+	margin: 2vw;
 	height: 10vh;
 	width: 25vw;
 	--paper-card-header-color: #000000;

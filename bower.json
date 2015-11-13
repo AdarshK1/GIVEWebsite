@@ -25,6 +25,7 @@
     "google-map": "GoogleWebComponents/google-map#~1.1.6",
     "iron-elements": "polymerelements/iron-elements#~1.0.4",
     "iron-pages": "PolymerElements/iron-pages#~1.0.3",
-    "paper-header-panel": "Polymerelements/paper-header-panel#~1.0.5"
+    "paper-header-panel": "Polymerelements/paper-header-panel#~1.0.5",
+    "paper-card": "Polymerelements/paper-card#~1.0.7"
   }
 }
