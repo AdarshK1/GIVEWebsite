@@ -186,7 +186,7 @@ paper-toolbar{
 .footer .social{
   padding: 10px;
   margin: 0;
-  width: 30%;
+  width: 30vw;
   -webkit-transform: translate(-270px, 0);
   -moz-transform: translate(-270px, 0);
   -ms-transform: translate(-270px, 0);
