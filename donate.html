@@ -3,12 +3,18 @@
 <head>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 		    <script src="bower_components/webcomponentsjs/webcomponents-lite.js"></script>
+		    <style is="custom-style">
+  paper-toolbar {
+    --paper-toolbar-background: #D32F2F; /* changes the background to blue*/
+    box-shadow: rgba(0,0,0,.2) 3px 5px 5px;
+    }; /* Notice the semicolon here */
+  }
+</style>
 		    <link rel="stylesheet" type="text/css" href="style.css">
-		    <link rel="stylesheet" type="text/css" href="donateStyle.css">
+		    <!--link rel="stylesheet" type="text/css" href="donateStyle.css"-->
 		    <!-- This is the stylesheet used-->
 		    <link href='http://fonts.googleapis.com/css?family=Raleway:400,200' rel='stylesheet' type='text/css'>
 		    <link href="//netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
-		    <link rel="stylesheet" type="text/css" href="style.css">
 		    <link rel="stylesheet" type="text/css" href="animate.css">
 		    <!-- Importing all used Polymer Components-->
 		    <link href="../bower_components/paper-toolbar/paper-toolbar.html" rel="import">
@@ -23,7 +29,7 @@
 		    <link rel="import" href="../bower_components/paper-card/paper-card.html">
 </head>
 <body>
-<paper-header-panel mode="standard">
+		<paper-header-panel mode="standard">
 		  <paper-toolbar id = "toolbar">
 		    <paper-tabs id = "toolbarTabs">
 		    	<paper-tab id = "toolTab"><a href="index.html">Home</a></paper-tab>
@@ -35,5 +41,22 @@
 		    </paper-tabs>
 		  </paper-toolbar>
 		</paper-header-panel>	
+
+				<br>
+	    <div class="footer">
+	        <ul class = "social">
+	          <li><a href="http://twitter.com/gian_michelle" target = "_blank">Twitter<i class="fa fa-twitter"></i></a></li>
+	          <li><a href="https://www.facebook.com/pages/GIVE-Growth-and-Inspiration-through-Volunteering-and-Education/104842809592156?sk=wall" target = "_blank">Facebook  <i class="fa fa-facebook"></i></a></li>
+	          <li><a href="http://www.google.com" target = "_blank">Email  <i class="fa fa-inbox"></i></a></li>
+	        </ul>
+
+	        <ul class = "contact">
+	          <p>Contact Us </p>
+	          <p>&copy; 2015 GIVE Tutoring </p>
+	          <p>Developed by Adarsh Kulkarni </p>
+	        </ul>
+	      
+
+	    </div>
 </body>
 </html>
