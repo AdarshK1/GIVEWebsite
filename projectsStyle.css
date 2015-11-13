@@ -1,19 +1,20 @@
 .apsat{
 	width: 100vw;
+	padding-top: 8vh;
 }
 
-paper-card{
-	width: 100%;d
+paper-material{
+	width: 100%;
 	display: table;
 }
 
-paper-card h1 {
+h1 {
 	color: #D32F2F;
 	text-align: center;
 	font-size: 2.5em;
 }
 
-paper-card img{
+paper-material img{
 	float:left;
 	padding: 1vh 1vw;
 	display: table-cell;
@@ -22,11 +23,32 @@ paper-card img{
 
 }
 
-paper-card p {
+paper-material p {
 	top: 50%;
 	padding-left: 5vw;
 	font-size: 1.2em;
 	text-align: center;
 	display: table-cell;
 	vertical-align: middle;
+}
+
+#articles{
+	display: table;
+	width: 100%;
+}
+
+paper-card{
+	display: table-cell;
+	padding: 0;
+	width: 25vw;
+	height: 10vh;
+	text-align: center;
+}
+
+paper-card p{
+	text-align: center;
+}
+
+paper-card a{
+	color: #D32F2F;
 }
