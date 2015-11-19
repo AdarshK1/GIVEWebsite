@@ -25,13 +25,16 @@
 				display: table;
 				margin-left: 5vw;
 				margin-right: 5vw;
+				text-align: center;
 			}
 
 			paper-card{
 				display: table-cell;
 				height: 10vh;
-				width: 22.5vw;
+				min-width: 22.5vw;
+				max-width: 22.5vw;
 				--paper-card-header-color: #D32F2F;
+
 
 			}
 
@@ -74,7 +77,7 @@
 		</paper-header-panel>
 
 
-	<google-map class = "map" fit-to-markers> 
+	<google-map class = "map" fit-to-markers disable-zoom> 
 		<google-map-marker latitude="38.8374" longitude="-77.16527">
 			Mason District Government Center
 		</google-map-marker>
@@ -85,131 +88,168 @@
 			South Gate Community Center
 		</google-map-marker>
 		<google-map-marker latitude="38.7953" longitude="-77.25311">
-			Centreville Regional Library
+			Centreville Regional Library Center
 		</google-map-marker>
 		<google-map-marker latitude="38.972" longitude="-77.38668">
-			Herndon Fortnightly Library
+			Herndon Fortnightly Library Center
 		</google-map-marker>
 		<google-map-marker latitude="38.77934" longitude = "-77.19215">
-			Richard Byrd Library
+			Richard Byrd Library Center
+		</google-map-marker>
+		<google-map-marker latitude="38.86547" longitude = "-77.20182">
+			Thomas Jefferson Library Center
+		</google-map-marker>
+		<google-map-marker latitude="38.85163" longitude = "-77.14275">
+			Woodrow Wilson Library Center
+		</google-map-marker>
+		<google-map-marker latitude="38.81299" longitude = "-77.15025">
+			Lincolnia Community Resource Center
+		</google-map-marker>
+		<google-map-marker latitude="38.99887" longitude = "-77.40203">
+			Sterling Public Library Center
+		</google-map-marker>
+		<google-map-marker latitude="38.84709" longitude = "-77.30359">
+			City of Fairfax Regional Library Center
+		</google-map-marker>
+		<google-map-marker latitude="38.88251" longitude = "-77.40826">
+			Chantilly Regional Library Center
+		</google-map-marker>
+		<google-map-marker latitude="39.03327" longitude = "-77.39479">
+			Cascades Library Center
+		</google-map-marker>
+		<google-map-marker latitude="38.78679" longitude = "-77.52034">
+			Bull Run Regional Library Center
+		</google-map-marker>
+		<google-map-marker latitude="38.78746" longitude = "-77.31718">
+			Burke Center Library Center
+		</google-map-marker>
+		<google-map-marker latitude="38.851302" longitude = "-77.143098">
+			Woodrow Wilson Reigonal Library Center
+		</google-map-marker>
+		<google-map-marker latitude="38.88401" longitude = "-77.3024">
+			Oakton Library Center
+		</google-map-marker>
+		<google-map-marker latitude= "38.93753" longitude = "-77.54564">
+			Gum Spring Library Center
+		</google-map-marker>
+		<google-map-marker latitude="38.77298" longitude = "-77.06307">
+			Martha Washington Library Center
 		</google-map-marker>
 	</google-map>
 
+	<div class = "joinTutoring">
+		<a href="https://docs.google.com/a/giveyouth.org/forms/d/1s3Z1FbY_7olih0IynuNgLkMMZqftHNF3ltomEkcVW6w/viewform" target="_blank"><paper-button id = "joinStudent" raised> Join Us as a Student</paper-button></a>
+        <a href="https://docs.google.com/a/giveyouth.org/forms/d/1NdSotY_gcke9mUKPG2Q1TyS58ltimCzLUucXNhcRV1U/viewform" target="_blank"><paper-button id="joinTutor" raised> Join Us as a Tutor</paper-button></a>
+	</div>
+
 	<div class = "centers">
 
-		<paper-card heading="Mason District Center" elevation="1">
+		<paper-card heading="Mason District " elevation="1">
 		  <div class="card-content"><p>Katie Pruitt, Jeffrey Yoo</p>
 		  							<p>Sunday 2-4 pm</p>
 		  							<p>masondistrict.center@giveyouth.org</p></div>
 		</paper-card>
-		<paper-card heading="Mason District Center" elevation="1">
-		  <div class="card-content"><p>Katie Pruitt, Jeffrey Yoo</p>
-		  							<p>Sunday 2-4 pm</p>
-		  							<p>masondistrict.center@giveyouth.org</p></div>
+		<paper-card heading="Bull Run Library " elevation="1">
+		  <div class="card-content"><p>Krupa Patel, Rahul Patel</p>
+		  							<p>Sunday 1-3 pm</p>
+		  							<p>bullrun.center@giveyouth.org</p></div>
 		</paper-card>
-		<paper-card heading="Mason District Center" elevation="1">
-		  <div class="card-content"><p>Katie Pruitt, Jeffrey Yoo</p>
-		  							<p>Sunday 2-4 pm</p>
-		  							<p>masondistrict.center@giveyouth.org</p></div>
+		<paper-card heading="Burke Centre Library " elevation="1">
+		  <div class="card-content"><p>Jay Pan, Arvind Govinday</p>
+		  							<p>NEED TIMINGS FOR THIS</p>
+		  							<p>burke.center@giveyouth.org</p></div>
 		</paper-card>
-		<paper-card heading="Mason District Center" elevation="1">
-		  <div class="card-content"><p>Katie Pruitt, Jeffrey Yoo</p>
-		  							<p>Sunday 2-4 pm</p>
-		  							<p>masondistrict.center@giveyouth.org</p></div>
+		<paper-card heading="Cascades Library " elevation="1">
+		  <div class="card-content"><p>Thor Keller, Aditya Ravipati</p>
+		  							<p>Saturday 2-4 pm</p>
+		  							<p>cascades.center@giveyouth.org</p></div>
 		</paper-card>
 		
 
 	</div>
 	<div class = "centers">
-		<paper-card heading="Mason District Center" elevation="1">
-	  		<div class="card-content"><p>Katie Pruitt, Jeffrey Yoo</p>
-	  								  <p>Sunday 2-4 pm</p>
-	  								  <p>masondistrict.center@giveyouth.org</p></div>
+		<paper-card heading="Centreville Regional Library" elevation="1">
+	  		<div class="card-content"><p>Valerie Nguyen, Shad Khan, Joanne Tang</p>
+	  								  <p>Saturday 12:30-2:30 pm</p>
+	  								  <p>centreville.center@giveyouth.org</p></div>
 		</paper-card>
-		<paper-card heading="Mason District Center" elevation="1">
-	  		<div class="card-content"><p>Katie Pruitt, Jeffrey Yoo</p>
-	  								  <p>Sunday 2-4 pm</p>
-	  								  <p>masondistrict.center@giveyouth.org</p></div>
+		<paper-card heading="Chantilly Regional Library" elevation="1">
+	  		<div class="card-content"><p>Anika Sindhwani, Isha Ghodgaonkar, Neha Rao</p>
+	  								  <p>Saturday 2-4 pm</p>
+	  								  <p>chantilly.center@giveyouth.org</p></div>
 		</paper-card>
-		<paper-card heading="Mason District Center" elevation="1">
-	  		<div class="card-content"><p>Katie Pruitt, Jeffrey Yoo</p>
-	  								  <p>Sunday 2-4 pm</p>
-	  								  <p>masondistrict.center@giveyouth.org</p></div>
+		<paper-card heading="City of Fairfax Regional Library" elevation="1">
+	  		<div class="card-content"><p>Sneha Ravi, Danielle Kim, Viviana Roses</p>
+	  								  <p>Saturday 2-4 pm</p>
+	  								  <p>fairfax.center@giveyouth.org</p></div>
 		</paper-card>
-		<paper-card heading="Mason District Center" elevation="1">
-	  		<div class="card-content"><p>Katie Pruitt, Jeffrey Yoo</p>
-	  								  <p>Sunday 2-4 pm</p>
-	  								  <p> masondistrict.center@giveyouth.org</p></div>
-		</paper-card>
-	</div>
-
-	<div class = "centers">
-		<paper-card heading="Mason District Center" elevation="1">
-	  		<div class="card-content"><p>Katie Pruitt, Jeffrey Yoo</p>
-	  								  <p>Sunday 2-4 pm</p>
-	  								  <p>masondistrict.center@giveyouth.org</p></div>
-		</paper-card>
-		<paper-card heading="Mason District Center" elevation="1">
-	  		<div class="card-content"><p>Katie Pruitt, Jeffrey Yoo</p>
-	  								  <p>Sunday 2-4 pm</p>
-	  								  <p>masondistrict.center@giveyouth.org</p></div>
-		</paper-card>
-		<paper-card heading="Mason District Center" elevation="1">
-	  		<div class="card-content"><p>Katie Pruitt, Jeffrey Yoo</p>
-	  								  <p>Sunday 2-4 pm</p>
-	  								  <p>masondistrict.center@giveyouth.org</p></div>
-		</paper-card>
-		<paper-card heading="Mason District Center" elevation="1">
-	  		<div class="card-content"><p>Katie Pruitt, Jeffrey Yoo</p>
-	  								  <p>Sunday 2-4 pm</p>
-	  								  <p> masondistrict.center@giveyouth.org</p></div>
+		<paper-card heading="Gum Spring Library" elevation="1">
+	  		<div class="card-content"><p>Aditya Jayanti, Hailey Ngo</p>
+	  								  <p>NEED TIMINGS</p>
+	  								  <p>gumspring.center@giveyouth.org</p></div>
 		</paper-card>
 	</div>
 
 	<div class = "centers">
-		<paper-card heading="Mason District Center" elevation="1">
-	  		<div class="card-content"><p>Katie Pruitt, Jeffrey Yoo</p>
-	  								  <p>Sunday 2-4 pm</p>
-	  								  <p>masondistrict.center@giveyouth.org</p></div>
+		<paper-card heading="Herdon Fortnightly Library" elevation="1">
+	  		<div class="card-content">	<p>Vikky Batra, Ria Shah</p>
+	  									<p>Saturday 10:30 am - 12:30 pm</p>
+	  								  	<p>herndon.center@giveyouth.org</p></div>
 		</paper-card>
-		<paper-card heading="Mason District Center" elevation="1">
-	  		<div class="card-content"><p>Katie Pruitt, Jeffrey Yoo</p>
-	  								  <p>Sunday 2-4 pm</p>
-	  								  <p>masondistrict.center@giveyouth.org</p></div>
+		<paper-card heading="James Lee Community Center" elevation="1">
+	  		<div class="card-content">	<p>Wendy Yin, Pallavi Bhave</p>
+	  									<p>Saturday 9:30-11:30 am</p>
+	  								  	<p>jameslee.center@giveyouth.org</p></div>
 		</paper-card>
-		<paper-card heading="Mason District Center" elevation="1">
-	  		<div class="card-content"><p>Katie Pruitt, Jeffrey Yoo</p>
-	  								  <p>Sunday 2-4 pm</p>
-	  								  <p>masondistrict.center@giveyouth.org</p></div>
+		<paper-card heading="Lincolnia Community Resource" elevation="1">
+	  		<div class="card-content">	<p>Elise Kim, Brian Chung</p>
+	  								  	<p>Saturday 10 am - 12 pm</p>
+	  								  	<p>lincolnia.center@giveyouth.org</p></div>
 		</paper-card>
-		<paper-card heading="Mason District Center" elevation="1">
-	  		<div class="card-content"><p>Katie Pruitt, Jeffrey Yoo</p>
-	  								  <p>Sunday 2-4 pm</p>
-	  								  <p> masondistrict.center@giveyouth.org</p></div>
+		<paper-card heading="Martha Washington Library" elevation="1">
+	  		<div class="card-content">	<p>Yeonju Kim, Ayman Slamani</p>
+	  								  	<p>Saturday 10:30 am - 12:30 pm</p>
+	  								  	<p>mwashington.center@giveyouth.org</p></div>
 		</paper-card>
 	</div>
 
 	<div class = "centers">
-		<paper-card heading="Mason District Center" elevation="1">
-	  		<div class="card-content"><p>Katie Pruitt, Jeffrey Yoo</p>
-	  								  <p>Sunday 2-4 pm</p>
-	  								  <p>masondistrict.center@giveyouth.org</p></div>
+		<paper-card heading="Oakton Library" elevation="1">
+	  		<div class="card-content">	<p>Ishika Jain, Varun Iyengar</p>
+	  								  	<p>Saturday 3-5 pm</p>
+	  								  	<p>oakton.center@giveyouth.org</p></div>
 		</paper-card>
-		<paper-card heading="Mason District Center" elevation="1">
-	  		<div class="card-content"><p>Katie Pruitt, Jeffrey Yoo</p>
-	  								  <p>Sunday 2-4 pm</p>
-	  								  <p>masondistrict.center@giveyouth.org</p></div>
+		<paper-card heading="Richard Byrd Library" elevation="1">
+	  		<div class="card-content">	<p>Elise Mai, Peter Zhao, Quan Lu</p>
+	  								  	<p>Saturday 2:30-4:30 pm</p>
+	  								  	<p>richardbyrd.center@giveyouth.org</p></div>
 		</paper-card>
-		<paper-card heading="Mason District Center" elevation="1">
-	  		<div class="card-content"><p>Katie Pruitt, Jeffrey Yoo</p>
-	  								  <p>Sunday 2-4 pm</p>
-	  								  <p>masondistrict.center@giveyouth.org</p></div>
+		<paper-card heading="Southgate Community Center" elevation="1">
+	  		<div class="card-content">	<p>Shreya Bhatia, Reema Patel</p>
+	  								  	<p>Saturday 12:30-2:30 pm</p>
+	  								  	<p>southgate.center@giveyouth.org</p></div>
 		</paper-card>
-		<paper-card heading="Mason District Center" elevation="1">
-	  		<div class="card-content"><p>Katie Pruitt, Jeffrey Yoo</p>
-	  								  <p>Sunday 2-4 pm</p>
-	  								  <p> masondistrict.center@giveyouth.org</p></div>
+		<paper-card heading="Sterling Library" elevation="1">
+	  		<div class="card-content">	<p></p>
+	  								  	<p>Sunday 2-4 pm</p>
+	  								  	<p>sterling.center@giveyouth.org</p></div>
 		</paper-card>
+	</div>
+
+	<div class = "centers">
+		<paper-card></paper-card>
+		<paper-card heading="Thomas Jefferson Library" elevation="1">
+	  		<div class="card-content">	<p>Maya Khanna, Abhishek Bhargava</p>
+	  								  	<p>Saturday 2-4 pm</p>
+	  								  	<p>thomasjefferson.center@giveyouth.org</p></div>
+		</paper-card>
+		<paper-card heading="Woodrow Wilson Library" elevation="1">
+	  		<div class="card-content">	<p>Arun Bhattasali, Arianna Habibi</p>
+	  								  	<p>NEED TIMINGS</p>
+	  								  	<p>wwilson.center@giveyouth.org</p></div>
+		</paper-card>
+		<paper-card></paper-card>
+		
 	</div>
 
 	<br>

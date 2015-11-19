@@ -23,3 +23,7 @@ paper-card{
 paper-card .card-content{
 	padding: .5vw;
 }
+
+.joinTutoring{
+	padding: 3vh;
+}
