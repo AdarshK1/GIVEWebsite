@@ -4,7 +4,7 @@
 }
 
 paper-material{
-	width: 100%;
+	width: 100vw;
 	display: table;
 }
 
@@ -25,22 +25,30 @@ paper-material img{
 
 paper-material p {
 	top: 50%;
-	padding-left: 5vw;
+	/*padding-left: 5vw;*/
 	font-size: 1.2em;
 	text-align: center;
 	display: table-cell;
 	vertical-align: middle;
 }
 
+.publications{
+	width: 100vw;
+}
+
+.publications paper-material{
+	width: 100vw;
+}
+
 #articles{
 	display: table;
-	width: 100%;
+	width: 100vw;
 }
 
 #articles paper-card{
 	display: table-cell;
 	padding: 0;
-	width: 25vw;
+	max-width: 20vw;
 	height: 10vh;
 	text-align: center;
 }
